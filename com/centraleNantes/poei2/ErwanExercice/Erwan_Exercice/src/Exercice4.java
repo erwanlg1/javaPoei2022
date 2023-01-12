@@ -1,5 +1,6 @@
 package com.centraleNantes.poei2.ErwanExercice.Erwan_Exercice.src;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Exercice4 {
@@ -16,26 +17,7 @@ public class Exercice4 {
         ;
         int dayChoice = scanner.nextInt();
 
+        System.out.println(langue[langueChoice][dayChoice]);
 
-        if (langueChoice == 1) {
-
-            if (dayChoice < 7) {
-
-                System.out.println(langue[0][dayChoice]);
-            } else {
-                System.out.println("Le jour n'existe pas");
-            }
-
-
-        } else if (langueChoice == 2) {
-
-            if (dayChoice < 7) {
-                System.out.println(langue[1][dayChoice]);
-            } else {
-                System.out.println("Le jour n'existe pas");
-            }
-        } else {
-            System.out.println("Cette langue n'existe pas");
-        }
     }
 }
