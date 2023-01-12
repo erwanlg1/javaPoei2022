@@ -1,9 +1,8 @@
 package com.centraleNantes.poei2.ErwanExercice.Erwan_Exercice.src;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class Exercice4 {
+public class Exercice5 {
     public static void main(String[] args) {
 
         String langue[][] = {{"Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"}, {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}};
@@ -16,7 +15,13 @@ public class Exercice4 {
         System.out.println("Choisir un jour");
         int dayChoice = scanner.nextInt();
 
-        System.out.println(langue[langueChoice][dayChoice]);
+
+        try {
+            System.out.println(langue[langueChoice][dayChoice]);}
+        catch (IllegalArgumentException ){
+            System.out.println("Le jour n'éxiste pas");
+        }
 
     }
-}
+    }
+
