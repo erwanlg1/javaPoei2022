@@ -16,11 +16,8 @@ public class Exercice5 {
         int dayChoice = scanner.nextInt();
 
 
-        try {
-            System.out.println(langue[langueChoice][dayChoice]);}
-        catch (IllegalArgumentException ){
-            System.out.println("Le jour n'éxiste pas");
-        }
+
+            System.out.println(langue[langueChoice][dayChoice]);
 
     }
     }
