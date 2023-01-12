@@ -1,3 +1,5 @@
+package com.centraleNantes.poei2.ErwanExercice.Erwan_Exercice.src;
+
 import java.util.Scanner;
 
 public class Exercice2 {
